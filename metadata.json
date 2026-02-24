@@ -1,0 +1,8 @@
+{
+  "name": "Thema nasabah v1",
+  "description": "A comprehensive cooperative management application with distinct interfaces for Members (Nasabah), Collectors, and Admins. Features loan management, savings tracking, and location-based member services.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
