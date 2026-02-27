@@ -1,0 +1,24 @@
+{
+  "name": "TOKATA DIGITAL KOPERASI",
+  "short_name": "TOKATA",
+  "description": "Aplikasi Koperasi Digital untuk pengelolaan simpanan dan pinjaman.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#7c3aed",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/koperasitokata/image/refs/heads/main/putih.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/koperasitokata/image/refs/heads/main/putih.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
