@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Nasabah, PinjamanAktif, Simpanan, AppTheme } from '../types';
 import { ICONS, callApi, THEMES } from '../constants';
+import { DASHBOARD_BANNER_URL } from '../constants/dashboardAssets';
 import { ThemeContext } from '../App';
 import { Calendar, ChevronRight, Info, RefreshCcw, Wallet, QrCode, XCircle, Camera, Loader2, LogOut, User, MapPin, Search, ArrowDownLeft, ArrowUpRight, Receipt, FileCheck, Ticket, AlertCircle, Clock, CreditCard, Download, ShieldCheck, Moon, Sun, Sparkles } from 'lucide-react';
 import { generateLoanSchedule } from '../utils/loanLogic';
@@ -611,6 +612,27 @@ const MemberDashboard: React.FC<MemberDashboardProps> = ({ user, onLogout, onUpd
                   </div>
                 </div>
               </div>
+
+              {activeTab === 'home' && (
+                <div className={`${themeStyle.cardBg} rounded-[2rem] border ${themeStyle.cardBorder} shadow-sm overflow-hidden relative aspect-[4/1] bg-slate-100 animate-pulse`}>
+                  <img 
+                    key={DASHBOARD_BANNER_URL}
+                    src={DASHBOARD_BANNER_URL} 
+                    alt="Dashboard Banner" 
+                    className="w-full h-full object-cover relative z-10"
+                    onLoad={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.parentElement?.classList.remove('animate-pulse');
+                    }}
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.parentElement?.classList.remove('animate-pulse');
+                    }}
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              )}
 
               {activeTab === 'home' && nextSchedule && (
                 <div className={`p-6 rounded-[2.5rem] text-white shadow-lg flex items-center justify-between relative overflow-hidden transition-all ${nextSchedule.status === 'red' ? 'bg-red-500 shadow-red-200' : 'bg-blue-600 shadow-blue-200'}`}>

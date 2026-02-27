@@ -109,14 +109,12 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full -ml-10 -mb-10 blur-2xl"></div>
         <div className="relative z-10 flex flex-col items-center">
-          <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center shadow-2xl mb-6 rotate-3 overflow-hidden">
-            <img 
-              src="https://raw.githubusercontent.com/koperasitokata/image/refs/heads/main/logo%20tokata.png" 
-              alt="Tokata Logo" 
-              className="w-full h-full object-contain p-3"
-              referrerPolicy="no-referrer"
-            />
-          </div>
+          <img 
+            src="https://raw.githubusercontent.com/koperasitokata/image/refs/heads/main/putih.png" 
+            alt="Tokata Logo" 
+            className="w-48 h-48 object-contain mb-2 drop-shadow-2xl"
+            referrerPolicy="no-referrer"
+          />
           <p className="text-white text-sm font-bold text-center max-w-[280px] mt-2 leading-relaxed opacity-90">
             Masuk untuk memantau simpanan, pinjaman, dan riwayat transaksi Anda secara real-time.
           </p>
