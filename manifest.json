@@ -1,6 +1,6 @@
 {
-  "name": "TOKATA DIGITAL KOPERASI",
-  "short_name": "TOKATA",
+  "name": "Tokata Digital",
+  "short_name": "Tokata Digital",
   "description": "Aplikasi Koperasi Digital untuk pengelolaan simpanan dan pinjaman.",
   "start_url": "/",
   "display": "standalone",
